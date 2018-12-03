@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${prefix}    your own prefix
-${url}    ######
+${url}    https://opensource-demo.orangehrmlive.com/
 ${browser}    chrome
 
 *** Test Cases ***
