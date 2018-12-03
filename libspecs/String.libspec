@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<keywordspec format="ROBOT" name="String" type="library" generated="20181203 00:16:01">
-<version>3.0.2</version>
+<keywordspec name="String" type="library" format="ROBOT" generated="20181203 18:54:39">
+<version>3.0.4</version>
 <scope>global</scope>
 <namedargs>yes</namedargs>
 <doc>A test library for string manipulation and verification.
@@ -204,8 +204,9 @@ on it.
 
 The match is case-sensitive by default, but giving ``case_insensitive``
 a true value makes it case-insensitive. The value is considered true
-if it is a non-empty string that is not equal to ``false`` or ``no``.
-If the value is not a string, its truth value is got directly in Python.
+if it is a non-empty string that is not equal to ``false``, ``none`` or
+``no``. If the value is not a string, its truth value is got directly
+in Python. Considering ``none`` false is new in RF 3.0.3.
 
 Lines are returned as one string catenated back together with
 newlines. Possible trailing newline is never returned. The
@@ -238,8 +239,9 @@ A line matches only if it matches the ``pattern`` fully.
 
 The match is case-sensitive by default, but giving ``case_insensitive``
 a true value makes it case-insensitive. The value is considered true
-if it is a non-empty string that is not equal to ``false`` or ``no``.
-If the value is not a string, its truth value is got directly in Python.
+if it is a non-empty string that is not equal to ``false``, ``none`` or
+``no``. If the value is not a string, its truth value is got directly
+in Python. Considering ``none`` false is new in RF 3.0.3.
 
 Lines are returned as one string catenated back together with
 newlines. Possible trailing newline is never returned. The
@@ -269,9 +271,10 @@ in Robot Framework test data in particular.
 
 By default lines match only if they match the pattern fully, but
 partial matching can be enabled by giving the ``partial_match``
-argument a true value. The value is considered true if it is a
-non-empty string that is not equal to ``false`` or ``no``. If the
-value is not a string, its truth value is got directly in Python.
+argument a true value. The value is considered true
+if it is a non-empty string that is not equal to ``false``, ``none`` or
+``no``. If the value is not a string, its truth value is got directly
+in Python. Considering ``none`` false is new in RF 3.0.3.
 
 If the pattern is empty, it matches only empty lines by default.
 When partial matching is enabled, empty pattern matches all lines.

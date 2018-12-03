@@ -23,3 +23,6 @@ save_vacancy_button = "id=btnSave"
 
 #modal
 confirm_deletion_button = "id=dialogDeleteBtn"
+
+
+checkbox = "//*[contains(text(), '${vacancy_name}')]/../../td[*]//input[contains(@type, 'checkbox')]"
